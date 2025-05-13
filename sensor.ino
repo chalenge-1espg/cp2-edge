@@ -105,7 +105,7 @@ void loop() {
       digitalWrite(LED_VERDE, LOW);
       digitalWrite(LED_AMARELO, LOW);
       digitalWrite(LED_VERMELHO, HIGH);
-      digitalWrite(BUZZER, HIGH); // Buzzer constante
+      tone(BUZZER, 1000); // Buzzer constante
     } else if (sensoresAcima == 1) {
       // Alerta: apenas um valor acima
       digitalWrite(LED_VERDE, LOW);
@@ -116,7 +116,7 @@ void loop() {
       tone(BUZZER, 1000);     // frequência 1kHz
       delay(200);             // 200 ms ligado
       noTone(BUZZER);
-      delay(800);             // 800 ms desligado
+      delay(400);             // 800 ms desligado
     } else {
       // Tudo normal
       digitalWrite(LED_VERDE, HIGH);
