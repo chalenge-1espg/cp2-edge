@@ -33,6 +33,21 @@ unsigned long ultimoMillisLCD = 0;
 const unsigned long intervaloLeitura = 1000;  // 1 segundo
 const unsigned long intervaloLCD = 5000;      // 5 segundos
 
+// Animação da logo
+void animarLogo() {
+  lcd.clear();
+  lcd.setCursor(3, 0);
+  lcd.print("HUNTER");
+  delay(1000);
+  lcd.setCursor(0, 1);
+  for (int i = 0; i < 16; i++) {
+    lcd.print("ÿ\xFF");
+    delay(50);
+  }
+  delay(1000);
+  lcd.clear();
+}
+
 void setup() {
   dht.begin();
   lcd.init();
@@ -42,6 +57,8 @@ void setup() {
   pinMode(LED_AMARELO, OUTPUT);
   pinMode(LED_VERMELHO, OUTPUT);
   pinMode(BUZZER, OUTPUT);
+
+  animarLogo();
 }
 
 void loop() {
@@ -93,7 +110,7 @@ void loop() {
     lcd.print((int)mediaLuz);
     lcd.print("%    ");
 
-        // Verificação dos níveis
+    // Verificação dos níveis
     bool tempAlta = mediaTemp > LIMITE_TEMP;
     bool umidAlta = mediaUmid > LIMITE_UMID;
     bool luzAlta = mediaLuz > LIMITE_LUZ;
