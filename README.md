@@ -85,7 +85,14 @@ Os logs podem ser lidos pela porta Serial ao iniciar o Arduino.
 
 ## 📸 Imagens do Projeto
 
-<a lin
+-🛠️ **Projeto montado na bancada**
+
+  <img src="https://github.com/user-attachments/assets/1706809a-d974-4b6d-ad05-b84c90bfc793" width="400"/>
+  <img src="https://github.com/user-attachments/assets/76f99541-87f0-4197-aa3a-9ffc0bab02ae" width="400"/>
+  
+-💡 **HUNTERS EM AÇÃO**
+
+ <img src="https://github.com/user-attachments/assets/f5a345cf-bc1f-4e77-b000-4c397ee066d9" width="400"/>
 
 ## 👨‍💻 Autor
 
