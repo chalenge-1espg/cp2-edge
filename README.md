@@ -82,9 +82,16 @@ Os logs podem ser lidos pela porta Serial ao iniciar o Arduino.
 - ⚠️ **LED Amarelo:** um sensor fora dos limites.
 - 🔥 **LED Vermelho + Buzzer:** dois ou mais sensores fora dos limites.
 
+
+## 📸 Imagens do Projeto
+
+<a lin
+
 ## 👨‍💻 Autor
 
-- Desenvolvido por **[Seu Nome Aqui]**.
+- Desenvolvido por Lucas de Almeida, André Spindola, João Palmeira, Eduardo Delarissia
+
+
 
 ## 📜 Licença
 
